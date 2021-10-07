@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Q1.Models.Model>
+@{
+    ViewBag.Title = "CustomerSearch"; 
+
+}
+
+<h2>Houses For Sale</h2>
+
+<table>
+    <tr>
+        <th>
+            Price&emsp;&emsp;&emsp;
+        </th>
+
+        <th>
+            Address&emsp;&emsp;&emsp;
+        </th>
+
+        <th>
+            City&emsp;
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var house in Model)
+     {
+        <tr>
+            <td>
+                @Html.DisplayFor(houseFromModel => house.price)&emsp;&emsp;&emsp;
+            </td>
+
+            <td>
+                @Html.DisplayFor(houseFromModel => house.address)&emsp;&emsp;&emsp;
+            </td>
+
+            <td>
+                @Html.DisplayFor(houseFromModel => house.city)&emsp;
+            </td>
+
+            <td>
+                @Html.ActionLink("Details", "HouseDetailsView", new { id = house.houseID}) | 
+                @Html.ActionLink("Contact Realtor", "ContactRealtorView", new { id = house.houseID } )
+            </td>
+           
+        </tr>
+     }
+</table><br>
+
+
+

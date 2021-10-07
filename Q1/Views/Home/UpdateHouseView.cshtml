@@ -1,0 +1,111 @@
+﻿@model Q1.Models.Model
+
+@{
+    ViewBag.Title = "UpdateHouseView"; 
+}
+
+<h2>Realtor Portal: Update House Information</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+<fieldset>
+    <div class="editor-field">
+        Price
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.price)
+        @Html.ValidationMessageFor(model => model.price)
+    </div>
+
+    <div class="editor-label">
+        Address
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.address)
+        @Html.ValidationMessageFor(model => model.address)
+    </div>
+
+    <div class="editor-label">
+        City
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.city)
+        @Html.ValidationMessageFor(model => model.city)
+    </div>
+
+    <div class="editor-label">
+        Zip Code
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.zipCode)
+        @Html.ValidationMessageFor(model => model.zipCode)
+    </div>
+
+    <div class="editor-label">
+        Year Built
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.yearBuilt)
+        @Html.ValidationMessageFor(model => model.yearBuilt)
+    </div>
+
+    <div class="editor-label">
+        Property Type
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.propertyType)
+        @Html.ValidationMessageFor(model => model.propertyType)
+    </div>
+
+    <div class="editor-label">
+        Square Feet
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.squareFeet)
+        @Html.ValidationMessageFor(model => model.squareFeet)
+    </div>
+
+    <div class="editor-label">
+        Bedrooms
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.numberOfBedrooms)
+        @Html.ValidationMessageFor(model => model.numberOfBedrooms)
+    </div>
+
+    <div class="editor-label">
+        Bathrooms
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.numberOfBathrooms)
+        @Html.ValidationMessageFor(model => model.numberOfBathrooms)
+    </div>
+
+    <div class="editor-label">
+        Garage Size
+    </div>
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.numberOfCarGarage)
+        @Html.ValidationMessageFor(model => model.numberOfCarGarage)
+    </div><br>
+
+    <p>
+        <input type="submit" value="Create" />
+    </p>
+</fieldset>
+}
+
+
+  

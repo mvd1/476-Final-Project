@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">CIS 476 Final Exam Problem One</h1>
+    <p>If you are a customer, hit the search button to search for houses. If you are a realtor, please login. </p>
+</div>
+<br>
+
+<div class="text-center"> 
+    <button type="button" id="searchButton" name="searchButton" onclick="window.open('@Url.Action("CustomerSearch")')">Search</button>
+</div>
+<br>
+
+<form class="text-center">
+    <label for="username">Username</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password</label><br>
+    <input type="text" id="password" name="password"><br><br>
+    <input type="submit" value="Login"/>
+</form>
+

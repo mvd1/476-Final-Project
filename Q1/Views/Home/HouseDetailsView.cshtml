@@ -1,0 +1,105 @@
+﻿@model Q1.Models.Model
+@{
+    ViewBag.Title = "HouseDetailsView"; 
+}
+    <h2>House Details</h2>
+
+    <fieldset>
+        <legend>Model</legend>
+
+        <div class="display-label">
+            <b>Price</b>
+        </div>
+
+        <div class="display-field">
+            @Html.DisplayFor(model => model.price)
+        </div>
+
+
+        <div class="display-label">
+            <b>Address</b>
+        </div>
+
+        <div class="display-field">
+            @Html.DisplayFor(model => model.address)
+        </div>
+
+
+        <div class="display-label">
+           <b>City</b>
+        </div>
+
+        <div class="display-field">
+            @Html.DisplayFor(model => model.city)
+        </div>
+
+
+        <div class="display-label">
+            <b>Zip Code</b>
+        </div>
+
+        <div class="display-field">
+            @Html.DisplayFor(model => model.zipCode)
+        </div>
+
+
+        <div class="display-label">
+            <b>Year Built</b>
+        </div>
+
+        <div class="display-field">
+            @Html.DisplayFor(model => model.yearBuilt)
+        </div>
+
+
+        <div class="display-label">
+            <b>Property Type</b>
+        </div>
+
+        <div class="display-field">
+            @Html.DisplayFor(model => model.propertyType)
+        </div>
+
+
+        <div class="display-label">
+            <b>Square Feet</b>
+        </div>
+
+        <div class="display-field">
+            @Html.DisplayFor(model => model.squareFeet)
+        </div>
+
+
+        <div class="display-label">
+            <b>Bedrooms</b>
+        </div>
+
+        <div class="display-field">
+            @Html.DisplayFor(model => model.numberOfBedrooms)
+        </div>
+
+
+        <div class="display-label">
+            <b>Bathrooms</b>
+        </div>
+
+        <div class="display-field">
+            @Html.DisplayFor(model => model.numberOfBathrooms)
+        </div>
+
+
+        <div class="display-label">
+            <b>Garage Size</b
+>        </div>
+
+        <div class="display-field">
+            @Html.DisplayFor(model => model.numberOfCarGarage)
+        </div>
+
+
+    </fieldset><br>
+
+    <div class="text-center">
+        <button type="button" id="contactButton" name="contactButton">Contact Realtor</button>
+    </div>
+
